@@ -1,0 +1,418 @@
+''''''''''''''''''''''''''''
+' Visual Basic global constant file.
+'
+' このファイルは、コード モジュールに読み込んで利用します。
+'
+' 宣言の重複をさけるため、いくつかの定数は、コメントアウト
+' してあります。
+'
+' もし、あなたが US 版の Visual Basic 1.0 で作成したアプリ
+' ケーションを Visual Basic 2.0 に移植する場合は、1.0 用の
+' グローバル定数を、このファイルに含まれるものと置き換える
+' ようにしてください。なお、True と False はビルトインの定
+' 数になったため、このファイルに宣言はありません。
+'
+''''''''''''''''''''''''''''
+
+' Generale
+
+' Clipboard 形式
+Global Const CF_LINK = &HBF00           ' DDE通信の情報
+Global Const CF_TEXT = 1                ' テキスト
+Global Const CF_BITMAP = 2              ' ビットマップ(.BMPファイル)
+Global Const CF_METAFILE = 3            ' メタファイル(.WMFファイル)
+Global Const CF_DIB = 8                 ' デバイス独立ビットマップ(.DIB ファイル)
+Global Const CF_PALETTE = 9             ' カラー パレット
+
+' DragOver イベント
+Global Const ENTER = 0                  ' 範囲内に入る
+Global Const LEAVE = 1                  ' 範囲外に出る
+Global Const OVER = 2                   ' 範囲の上
+
+' Drag メソッド
+Global Const CANCEL = 0                 ' ドラック操作の取り消し
+Global Const BEGIN_DRAG = 1             ' ドラックの開始
+Global Const END_DRAG = 2               ' ドラックの終了
+
+' Show メソッド
+Global Const MODAL = 1                  ' モーダル
+Global Const MODELESS = 0               ' モードレス
+
+' Arrange メソッド
+Global Const CASCADE = 0                ' MDI子フォームを重ねて表示
+Global Const TILE_HORIZONTAL = 1        ' MDI子フォームを縦割り表示
+Global Const TILE_VERTICAL = 2          ' MDI子フォームを横割り表示
+Global Const ARRANGE_ICONS = 3          ' MDI子フォームのアイコンを整列
+
+'ZOrder メソッド
+Global Const BRINGTOFRONT = 0           ' Zオーダを先頭に移動
+Global Const SENDTOBACK = 1             ' Zオーダを後方に移動
+
+' キーコード
+Global Const KEY_LBUTTON = &H1
+Global Const KEY_RBUTTON = &H2
+Global Const KEY_CANCEL = &H3
+Global Const KEY_MBUTTON = &H4
+Global Const KEY_BACK = &H8
+Global Const KEY_TAB = &H9
+Global Const KEY_CLEAR = &HC
+Global Const KEY_RETURN = &HD
+Global Const KEY_SHIFT = &H10
+Global Const KEY_CONTROL = &H11
+Global Const KEY_MENU = &H12
+Global Const KEY_PAUSE = &H13
+Global Const KEY_CAPITAL = &H14
+Global Const KEY_ESCAPE = &H1B
+Global Const KEY_SPACE = &H20
+Global Const KEY_PRIOR = &H21
+Global Const KEY_NEXT = &H22
+Global Const KEY_END = &H23
+Global Const KEY_HOME = &H24
+Global Const KEY_LEFT = &H25
+Global Const KEY_UP = &H26
+Global Const KEY_Right = &H27
+Global Const KEY_DOWN = &H28
+Global Const KEY_SELECT = &H29
+Global Const KEY_PRINT = &H2A
+Global Const KEY_EXECUTE = &H2B
+Global Const KEY_SNAPSHOT = &H2C
+Global Const KEY_INSERT = &H2D
+Global Const KEY_DELETE = &H2E
+Global Const KEY_HELP = &H2F
+
+' KEY_A から KEY_Z までは、ASCII コードと同じです
+' KEY_0 から KEY_9 までは、ASCII コードと同じです
+
+Global Const KEY_NUMPAD0 = &H60
+Global Const KEY_NUMPAD1 = &H61
+Global Const KEY_NUMPAD2 = &H62
+Global Const KEY_NUMPAD3 = &H63
+Global Const KEY_NUMPAD4 = &H64
+Global Const KEY_NUMPAD5 = &H65
+Global Const KEY_NUMPAD6 = &H66
+Global Const KEY_NUMPAD7 = &H67
+Global Const KEY_NUMPAD8 = &H68
+Global Const KEY_NUMPAD9 = &H69
+Global Const KEY_MULTIPLY = &H6A
+Global Const KEY_ADD = &H6B
+Global Const KEY_SEPARATOR = &H6C
+Global Const KEY_SUBTRACT = &H6D
+Global Const KEY_DECIMAL = &H6E
+Global Const KEY_DIVIDE = &H6F
+Global Const KEY_F1 = &H70
+Global Const KEY_F2 = &H71
+Global Const KEY_F3 = &H72
+Global Const KEY_F4 = &H73
+Global Const KEY_F5 = &H74
+Global Const KEY_F6 = &H75
+Global Const KEY_F7 = &H76
+Global Const KEY_F8 = &H77
+Global Const KEY_F9 = &H78
+Global Const KEY_F10 = &H79
+Global Const KEY_F11 = &H7A
+Global Const KEY_F12 = &H7B
+Global Const KEY_F13 = &H7C
+Global Const KEY_F14 = &H7D
+Global Const KEY_F15 = &H7E
+Global Const KEY_F16 = &H7F
+
+Global Const KEY_NUMLOCK = &H90
+
+' バリアント データ型
+
+Global Const V_EMPTY = 0                ' 未初期化状態
+Global Const V_NULL = 1                 ' NULL(有効値がない)
+Global Const V_INTEGER = 2              ' 整数型（Integer）
+Global Const V_LONG = 3                 ' 長整数型（Long）
+Global Const V_SINGLE = 4               ' 単精度浮動小数点型（Single）
+Global Const V_DOUBLE = 5               ' 倍精度浮動小数点型（Double）
+Global Const V_CURRENCY = 6             ' 通貨型（Currency）
+Global Const V_DATE = 7                 ' 日付（Date）
+Global Const V_STRING = 8               ' 文字型（String）
+
+' イベント パラメータ
+
+' エラー番号(LinkError)
+Global Const WRONG_FORMAT = 1
+Global Const DDE_SOURCE_CLOSED = 6
+Global Const TOO_MANY_LINKS = 7
+Global Const DATA_TRANSFER_FAILED = 8
+Global Const OUT_OF_MEMORY = 11
+
+' QueryUnload イベント
+Global Const FORM_CONTROLMENU = 0
+Global Const FORM_CODE = 1
+Global Const APP_WINDOWS = 2
+Global Const APP_TASKMANAGER = 3
+Global Const FORM_MDIFORM = 4
+
+' プロパティ
+
+' 色
+Global Const BLACK = &H0&               ' 黒色
+Global Const RED = &HFF&                ' 赤色
+Global Const GREEN = &HFF00&            ' 緑色
+Global Const YELLOW = &HFFFF&           ' 黄色
+Global Const BLUE = &HFF0000            ' 青色
+Global Const MAGENTA = &HFF00FF         ' 紫色
+Global Const CYAN = &HFFFF00            ' 水色
+Global Const WHITE = &HFFFFFF           ' 白色
+
+' 画面の色
+Global Const SCROLL_BARS = &H80000000           ' スクロール バー
+Global Const DESKTOP = &H80000001               ' デスクトップ
+Global Const ACTIVE_TITLE_BAR = &H80000002      ' アクティブ タイトル バー
+Global Const INACTIVE_TITLE_BAR = &H80000003    ' 非アクティブ タイトル バー
+Global Const MENU_BAR = &H80000004              ' メニュー バー
+Global Const WINDOW_BACKGROUND = &H80000005     ' ウィンドウの背景
+Global Const WINDOW_FRAME = &H80000006          ' ウィンドウの外枠
+Global Const MENU_TEXT = &H80000007             ' メニューの文字
+Global Const WINDOW_TEXT = &H80000008           ' ウィンドウ内の文字
+Global Const TITLE_BAR_TEXT = &H80000009        ' タイトル バーの文字
+Global Const ACTIVE_BORDER = &H8000000A         ' アクティブ ウィンドウの外枠
+Global Const INACTIVE_BORDER = &H8000000B       ' 非アクティブ ウィンドウの外枠
+Global Const APPLICATION_WORKSPACE = &H8000000C ' 作業領域
+Global Const HIGHLIGHT = &H8000000D             ' コントロールで選択されたアイコン
+Global Const HIGHLIGHT_TEXT = &H8000000E        ' コントロールで選択されたテキスト
+Global Const BUTTON_FACE = &H8000000F           ' ボタンの表面
+Global Const BUTTON_SHADOW = &H80000010         ' ボタンの影
+Global Const GRAY_TEXT = &H80000011             ' 淡色表示の文字（ディスプレイドライバによっては、黒色になります）
+Global Const BUTTON_TEXT = &H80000012           ' ボタンの文字
+
+' 列挙型
+
+' IMEMode プロパティ
+' IMEStatus 関数
+
+Global Const IME_NONE = 0               ' 0 - なし
+Global Const IME_ON = 1                 ' 1 - オン
+Global Const IME_OFF = 2                ' 2 - オフ
+Global Const IME_FIXEDOFF = 3           ' 3 - オフ 固定
+Global Const IME_ZEN_HIRAGANA = 4       ' 4 - 全角ひらがな
+Global Const IME_ZEN_KATAKANA = 5       ' 5 - 全角カタカナ
+Global Const IME_HAN_KATAKANA = 6       ' 6 - 半角カタカナ
+Global Const IME_ZEN_ALPHANUM = 7       ' 7 - 全角英数
+
+
+' Align (picture box)
+Global Const NONE = 0                   ' 0 - なし
+Global Const ALIGN_TOP = 1              ' 1 - 上に合わせる
+Global Const ALIGN_BOTTOM = 2           ' 2 - 下に合わせる
+
+
+' Alignment
+Global Const LEFT_JUSTIFY = 0   ' 0 - 左揃え
+Global Const Right_JUSTIFY = 1  ' 1 - 右揃え
+Global Const CENTER = 2         ' 2 - 中央揃え
+
+' BorderStyle (form)
+'Global Const NONE = 0          ' 0 - なし
+Global Const FIXED_SINGLE = 1   ' 1 - 固定(実線)
+Global Const SIZABLE = 2        ' 2 - 可変
+Global Const FIXED_DOUBLE = 3   ' 3 - 固定(2重線)
+
+' BorderStyle (Shape, Line)
+'Global Const TRANSPARENT = 0   ' 0 - 透明
+'Global Const SOLID = 1         ' 1 - 実線(中心線)
+'Global Const DASH = 2          ' 2 - 鎖線
+'Global Const DOT = 3           ' 3 - 点線
+'Global Const DASH_DOT = 4      ' 4 - 一点鎖線
+'Global Const DASH_DOT_DOT = 5  ' 5 - 二点鎖線
+'Global Const INSIDE_SOLID = 6  ' 6 - 実線(ふちどり)
+
+' MousePointer
+Global Const DEFAULT = 0        ' 0 - 既定値
+Global Const ARROW = 1          ' 1 - 矢印
+Global Const CROSSHAIR = 2      ' 2 - クロス
+Global Const IBEAM = 3          ' 3 - I-ビーム
+Global Const ICON_POINTER = 4   ' 4 - アイコン
+Global Const SIZE_POINTER = 5   ' 5 - サイズ(上下左右)
+Global Const SIZE_NE_SW = 6     ' 6 - サイズ(右上-左下)
+Global Const SIZE_N_S = 7       ' 7 - サイズ(上下)
+Global Const SIZE_NW_SE = 8     ' 8 - サイズ(左上-右下)
+Global Const SIZE_W_E = 9       ' 9 - サイズ(左右)
+Global Const UP_ARROW = 10      ' 10 - 上矢印
+Global Const HOURGLASS = 11     ' 11 - 砂時計
+Global Const NO_DROP = 12       ' 12 - 禁止
+
+' DragMode
+Global Const MANUAL = 0         ' 0 - 手動
+Global Const AUTOMATIC = 1      ' 1 - 自動
+
+' DrawMode
+Global Const BLACKNESS = 1      ' 1 - 黒
+Global Const NOT_MERGE_PEN = 2  ' 2 - Not Merge Pen
+Global Const MASK_NOT_PEN = 3   ' 3 - Mask Not Pen
+Global Const NOT_COPY_PEN = 4   ' 4 - Not Copy Pen
+Global Const MASK_PEN_NOT = 5   ' 5 - Mask Pen Not
+Global Const INVERT = 6         ' 6 - Invert
+Global Const XOR_PEN = 7        ' 7 - Xor Pen
+Global Const NOT_MASK_PEN = 8   ' 8 - Not Mask Pen
+Global Const MASK_PEN = 9       ' 9 - Mask Pen
+Global Const NOT_XOR_PEN = 10   ' 10 - Not Xor Pen
+Global Const NOP = 11           ' 11 - Nop
+Global Const MERGE_NOT_PEN = 12 ' 12 - Merge Not Pen
+Global Const COPY_PEN = 13      ' 13 - Copy Pen
+Global Const MERGE_PEN_NOT = 14 ' 14 - Merge Pen Not
+Global Const MERGE_PEN = 15     ' 15 - Merge Pen
+Global Const WHITENESS = 16     ' 16 - 白
+
+' DrawStyle
+Global Const SOLID = 0          ' 0 - 実線
+Global Const DASH = 1           ' 1 - 鎖線
+Global Const DOT = 2            ' 2 - 点線
+Global Const DASH_DOT = 3       ' 3 - 一点鎖線
+Global Const DASH_DOT_DOT = 4   ' 4 - 二点鎖線
+Global Const INVISIBLE = 5      ' 5 - 透明
+Global Const INSIDE_SOLID = 6   ' 6 - 塗りつぶし
+
+' FillStyle
+' Global Const SOLID = 0           ' 0 - 塗りつぶし
+Global Const TRANSPARENT = 1       ' 1 - 透明
+Global Const HORIZONTAL_LINE = 2   ' 2 - 横線
+Global Const VERTICAL_LINE = 3     ' 3 - 縦線
+Global Const UPWARD_DIAGONAL = 4   ' 4 - 斜線(左上-右下)
+Global Const DOWNWARD_DIAGONAL = 5 ' 5 - 斜線(左下-右上)
+Global Const CROSS = 6             ' 6 - クロス
+Global Const DIAGONAL_CROSS = 7    ' 7 - 網かけ
+
+' LinkMode (forms and controls)
+' Global Const NONE = 0         ' 0 - なし
+Global Const LINK_SOURCE = 1    ' 1 - ソース   (フォームのみ)
+Global Const LINK_AUTOMATIC = 1 ' 1 - 自動     (コントロールのみ)
+Global Const LINK_MANUAL = 2    ' 2 - 手動     (コントロールのみ)
+Global Const LINK_NOTIFY = 3    ' 3 - 通知     (コントロールのみ)
+
+' LinkMode (VB1.0 との互換性のために残されています)
+Global Const HOT = 1            ' 1 - ホット   (コントロールのみ)
+Global Const SERVER = 1         ' 1 - サーバー (フォームのみ)
+Global Const COLD = 2           ' 2 - コールド (コントロールのみ)
+
+
+' ScaleMode
+Global Const USER = 0          ' 0 - ユーザー
+Global Const TWIPS = 1         ' 1 - Twip
+Global Const POINTS = 2        ' 2 - ポイント
+Global Const PIXELS = 3        ' 3 - ピクセル
+Global Const CHARACTERS = 4    ' 4 - キャラクタ
+Global Const INCHES = 5        ' 5 - インチ
+Global Const MILLIMETERS = 6   ' 6 - ミリメートル
+Global Const CENTIMETERS = 7   ' 7 - センチメートル
+
+' ScrollBar
+' Global Const NONE     = 0    ' 0 - なし
+Global Const HORIZONTAL = 1    ' 1 - 水平
+Global Const VERTICAL = 2      ' 2 - 垂直
+Global Const BOTH = 3          ' 3 - 両方
+
+' Shape
+Global Const SHAPE_RECTANGLE = 0          ' 0 - 長方形
+Global Const SHAPE_SQUARE = 1             ' 1 - 正方形
+Global Const SHAPE_OVAL = 2               ' 2 - 楕円
+Global Const SHAPE_CIRCLE = 3             ' 3 - 円
+Global Const SHAPE_ROUNDED_RECTANGLE = 4  ' 4 - 丸みのある長方形
+Global Const SHAPE_ROUNDED_SQUARE = 5     ' 5 - 丸みのある正方形
+
+' WindowState
+Global Const NORMAL = 0    ' 0 - ノーマル
+Global Const MINIMIZED = 1 ' 1 - アイコン化
+Global Const MAXIMIZED = 2 ' 2 - 最大表示
+
+' Check Value
+Global Const UNCHECKED = 0 ' 0 - 未チェック
+Global Const CHECKED = 1   ' 1 - チェック
+Global Const GRAYED = 2    ' 2 - 無効
+
+' Shift パラメータ ビット マスク
+Global Const SHIFT_MASK = 1
+Global Const CTRL_MASK = 2
+Global Const ALT_MASK = 4
+
+' Button パラメータ マスク
+Global Const LEFT_BUTTON = 1
+Global Const Right_BUTTON = 2
+Global Const MIDDLE_BUTTON = 4
+
+' Function パラメータ
+' MsgBox パラメータ
+Global Const MB_OK = 0                 ' OK ボタンのみ
+Global Const MB_OKCANCEL = 1           ' OK と ｷｬﾝｾﾙ ボタン
+Global Const MB_ABORTRETRYIGNORE = 2   ' 中止, 再試行, 無視 ボタン
+Global Const MB_YESNOCANCEL = 3        ' はい, いいえ, ｷｬﾝｾﾙ ボタン
+Global Const MB_YESNO = 4              ' はい, いいえ ボタン
+Global Const MB_RETRYCANCEL = 5        ' 再試行 と ｷｬﾝｾﾙ ボタン
+
+Global Const MB_ICONSTOP = 16          ' 警告
+Global Const MB_ICONQUESTION = 32      ' 確認
+Global Const MB_ICONEXCLAMATION = 48   ' 注意
+Global Const MB_ICONINFORMATION = 64   ' インフォメーションのアイコン
+
+Global Const MB_APPLMODAL = 0          ' アプリケーション モーダル
+Global Const MB_DEFBUTTON1 = 0         ' 第 1 ボタンをデフォルトにする
+Global Const MB_DEFBUTTON2 = 256       ' 第 2 ボタンをデフォルトにする
+Global Const MB_DEFBUTTON3 = 512       ' 第 3 ボタンをデフォルトにする
+Global Const MB_SYSTEMMODAL = 4096     ' システム モード
+
+' MsgBox ボタンの戻り値
+Global Const IDOK = 1                  ' OK ボタン
+Global Const IDCANCEL = 2              ' ｷｬﾝｾﾙ ボタン
+Global Const IDABORT = 3               ' 中止 ボタン
+Global Const IDRETRY = 4               ' 再試行 ボタン
+Global Const IDIGNORE = 5              ' 無視 ボタン
+Global Const IDYES = 6                 ' はい ボタン
+Global Const IDNO = 7                  ' いいえ ボタン
+
+' SetAttr, Dir, GetAttr 関数
+Global Const ATTR_NORMAL = 0            ' 標準ファイル
+Global Const ATTR_READONLY = 1          ' 読み出し専用ファイル
+Global Const ATTR_HIDDEN = 2            ' 隠しファイル
+Global Const ATTR_SYSTEM = 4            ' システム ファイル
+Global Const ATTR_VOLUME = 8            ' ボリューム ラベル
+Global Const ATTR_DIRECTORY = 16        ' MS-DOS ディレクトリ
+Global Const ATTR_ARCHIVE = 32          ' アーカイブ属性（バックアップがされてない）
+'Grid
+'ColAlignment,FixedAlignment プロパティ
+Global Const GRID_ALIGNLEFT = 0         ' 左詰
+Global Const GRID_ALIGNRight = 1        ' 右詰
+Global Const GRID_ALIGNCENTER = 2       ' 中央
+Global Const GRID_COLALIGNMENT = 3      ' FixedAlignment のみ有効
+
+
+'Fillstyle プロパティ
+Global Const GRID_SINGLE = 0            ' セル位置
+Global Const GRID_REPEAT = 1            ' 選択範囲
+
+'OLE Client コントロール
+'Action
+Global Const OLE_CREATE_NEW = 0         ' 新規作成
+Global Const OLE_CREATE_FROM_FILE = 1   ' ファイルを元に作成
+Global Const OLE_COPY = 4               ' コピー
+Global Const OLE_PASTE = 5              ' 貼り付け
+Global Const OLE_UPDATE = 6             ' 更新
+Global Const OLE_ACTIVATE = 7           ' アクティブにする
+Global Const OLE_EXECUTE = 8            ' 実行
+Global Const OLE_CLOSE = 9              ' 閉じる
+Global Const OLE_DELETE = 10            ' 削除
+Global Const OLE_SAVE_TO_FILE = 11      ' ファイルに保存
+Global Const OLE_READ_FROM_FILE = 12    ' ファイルから読み込み
+Global Const OLE_CONVERT_TO_TYPE = 13   ' 型の変換
+
+'ServerType
+Global Const OLE_LINKED = 0
+Global Const OLE_EMBEDDED = 1
+Global Const OLE_STATIC = 2
+
+'UpdateOptions
+Global Const OLE_AUTOMATIC = 0
+Global Const OLE_FROZEN = 1
+Global Const OLE_MANUAL = 2
+
+'Updated イベント
+Global Const OLE_CHANGED = 0
+Global Const OLE_SAVED = 1
+Global Const OLE_CLOSED = 2
+Global Const OLE_RELEASE = 5
+
+' Dialog
+Global Const OFN_READONLY = &H1&
+
